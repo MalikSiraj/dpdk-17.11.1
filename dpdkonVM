@@ -12,6 +12,7 @@ sed -ri 's,(KNI_KMOD=).*,\1n,' build/.config
 sed -ri 's,(IGB_UIO=).*,\1n,' build/.config
 
 sudo apt-get install libnuma-dev
+sudo apt-get install libpcap-dev
 
 sudo apt-get install build-essential checkinstall
 
