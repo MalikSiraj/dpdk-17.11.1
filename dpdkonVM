@@ -35,7 +35,9 @@ cd dpdk
 make config T=x86_64-native-linuxapp-gcc
 sed -ri 's,(PMD_PCAP=).*,\1y,' build/.config
 
-make
+
+make install T=x86_64-native-linuxapp-gcc
+export DESTDIR=/home/siraj/dpdk-stable-18.02.1
 
 mkdir -p /mnt/huge
 mount -t hugetlbfs nodev /mnt/huge
