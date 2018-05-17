@@ -25,7 +25,7 @@ cd Python-$version
 ./configure
 make
 sudo checkinstall
-
+#test
 #Now download latest dpdk from https://dpdk.org/download
 
 tar xf dpdk.tar.gz
